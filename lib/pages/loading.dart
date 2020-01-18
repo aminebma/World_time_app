@@ -43,6 +43,7 @@ class _LoadingState extends State<Loading> {
         'location': instance.location,
         'flag': instance.flag,
         'time': instance.time,
+        'isDateTime': instance.isDateTime,
       },
     );
   }
@@ -57,11 +58,12 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.blue,
         body: Center(
-      child: SpinKitChasingDots(
-        color: Colors.black,
-        size: 50.0,
-      ),
-    ));
+          child: SpinKitChasingDots(
+            color: Colors.yellow[600],
+            size: 50.0,
+          ),
+        ));
   }
 }
